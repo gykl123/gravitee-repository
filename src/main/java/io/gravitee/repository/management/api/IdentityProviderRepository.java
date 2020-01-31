@@ -44,5 +44,6 @@ public interface IdentityProviderRepository {
     void delete(String key) throws TechnicalException;
 
     Optional<IdentityProvider> findById(String key) throws TechnicalException;
-    
+
+    Integer findMaxIdentityProviderReferenceIdAndReferenceTypeOrder(String referenceId, IdentityProviderReferenceType referenceType) throws TechnicalException;
 }
