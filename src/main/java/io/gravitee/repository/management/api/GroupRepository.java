@@ -27,7 +27,7 @@ import java.util.Set;
 public interface GroupRepository extends CrudRepository<Group, String> {
 
     /**
-     * List all APIs
+     * List all Groups
      * @return all groups
      * @throws TechnicalException if something goes wrong
      */
